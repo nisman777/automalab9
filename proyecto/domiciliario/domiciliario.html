@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instalaciones domiciliarias · AutomaLab</title>
+<link rel="stylesheet" href="css/domiciliario.css?v=1">
+</head>
+<body>
+<header id="cabecera">
+  <a class="marca" href="../index.html">⚡ FRANCO WEB 912</a>
+  <span class="sep">/</span>
+  <span>Instalaciones domiciliarias</span>
+</header>
+
+<main>
+  <section id="vista-proyectos"></section>
+
+  <section id="vista-editor" hidden>
+    <div class="ed-barra">
+      <button id="btn-volver" class="btn" type="button">← Proyectos</button>
+      <strong id="ed-nombre"></strong>
+      <span id="ed-estado" class="estado"></span>
+      <span class="espacio"></span>
+      <button id="btn-deshacer" class="btn" type="button" disabled>↶ Deshacer</button>
+      <button id="btn-rehacer" class="btn" type="button" disabled>↷ Rehacer</button>
+      <button id="btn-guardar" class="btn" type="button">Guardar</button>
+      <button id="btn-exportar" class="btn" type="button">Exportar .json</button>
+    </div>
+    <nav class="pestanas">
+      <button class="activa" type="button">Datos</button>
+      <button type="button" disabled title="Entrega 1B">Planta</button>
+      <button type="button" disabled title="Paso 4">Unifilar</button>
+      <button type="button" disabled title="Paso 4">Tablero topográfico</button>
+      <button type="button" disabled title="Paso 5">Verificación AEA</button>
+      <button type="button" disabled title="Paso 6">Simulación</button>
+    </nav>
+    <div id="panel-datos" class="panel"></div>
+  </section>
+</main>
+
+<footer id="pie">
+  <span id="estado-almacenamiento"></span>
+  <span id="texto-norma"></span>
+  <span id="version"></span>
+</footer>
+
+<script type="module" src="js/main.js?v=1"></script>
+</body>
+</html>
